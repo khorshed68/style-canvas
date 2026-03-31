@@ -7,7 +7,7 @@ import ProductCard from "@/components/ProductCard";
 
 const featuredProducts = products.filter((p) => p.featured);
 const trendingProducts = products.filter((p) => p.trending);
-const heroPortrait = "/hero-portrait.jpg";
+const heroPortrait = "public/hero-portrait.jpg";
 
 const Index = () => (
   <main>
