@@ -7,19 +7,29 @@ import ProductCard from "@/components/ProductCard";
 
 const featuredProducts = products.filter((p) => p.featured);
 const trendingProducts = products.filter((p) => p.trending);
+const heroPortrait = "/hero-portrait.jpg";
 
 const Index = () => (
   <main>
     {/* Hero */}
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      <img src={heroBanner} alt="KP Zone streetwear hero" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1024} />
+      <img
+        src={heroPortrait}
+        alt="KP Zone hero portrait"
+        className="absolute inset-0 w-full h-full object-cover object-[center_18%]"
+        width={1920}
+        height={1024}
+        onError={(e) => {
+          e.currentTarget.src = heroBanner;
+        }}
+      />
       <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/50 to-background" />
-      <div className="relative z-10 text-center px-4">
+      <div className="absolute right-3 sm:right-6 lg:right-10 bottom-4 sm:bottom-8 lg:bottom-10 z-10 text-right px-2 sm:px-0">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="font-display text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4"
+          className="font-display text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4"
         >
           New Collection 2026
         </motion.p>
@@ -27,7 +37,7 @@ const Index = () => (
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="font-display text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight leading-none"
+          className="font-display text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-none"
         >
           WEAR YOUR<br />
           <span className="text-gradient">IDENTITY</span>
