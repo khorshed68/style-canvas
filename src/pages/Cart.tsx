@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Minus, Plus, Trash2, ArrowLeft, ShoppingBag } from "lucide-react";
 import { useCart } from "@/context/CartContext";
+import { formatBDT } from "@/lib/utils";
 
 const Cart = () => {
   const { items, updateQuantity, removeItem, totalPrice, clearCart } = useCart();
@@ -42,7 +43,7 @@ const Cart = () => {
                 <div className="flex-1 min-w-0">
                   <h3 className="font-display text-sm font-medium truncate">{item.product.name}</h3>
                   <p className="text-muted-foreground text-xs mt-0.5">Size: {item.size}</p>
-                  <p className="font-display font-semibold text-sm mt-1">${item.product.price}</p>
+                  <p className="font-display font-semibold text-sm mt-1">{formatBDT(item.product.price)}</p>
                   <div className="flex items-center gap-3 mt-2">
                     <button onClick={() => updateQuantity(item.product.id, item.size, item.quantity - 1)} className="w-7 h-7 border border-border rounded flex items-center justify-center hover:border-foreground transition-colors">
                       <Minus size={12} />
@@ -63,12 +64,12 @@ const Cart = () => {
           <div className="glass-card rounded-xl p-6 h-fit lg:sticky lg:top-24">
             <h2 className="font-display text-lg font-bold mb-4">Order Summary</h2>
             <div className="space-y-2 text-sm">
-              <div className="flex justify-between"><span className="text-muted-foreground">Subtotal</span><span>${totalPrice}</span></div>
+              <div className="flex justify-between"><span className="text-muted-foreground">Subtotal</span><span>{formatBDT(totalPrice)}</span></div>
               <div className="flex justify-between"><span className="text-muted-foreground">Shipping</span><span>Free</span></div>
             </div>
             <div className="border-t border-border my-4" />
             <div className="flex justify-between font-display font-bold text-lg">
-              <span>Total</span><span>${totalPrice}</span>
+              <span>Total</span><span>{formatBDT(totalPrice)}</span>
             </div>
             <button className="w-full mt-6 bg-accent text-accent-foreground py-3.5 rounded-md font-display text-sm tracking-widest uppercase hover-lift">
               Checkout

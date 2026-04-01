@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1024" role="img" aria-label="Royal Blue Panjabi">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#09173f" />
+      <stop offset="100%" stop-color="#2d63d1" />
+    </linearGradient>
+    <linearGradient id="fabric" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5e89e8" />
+      <stop offset="100%" stop-color="#1e3f90" />
+    </linearGradient>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#d7e4ff" opacity="0.28" />
+    </pattern>
+  </defs>
+  <rect width="800" height="1024" fill="url(#bg)" />
+  <ellipse cx="400" cy="920" rx="210" ry="42" fill="#040913" opacity="0.35" />
+  <path d="M254 230 C300 168 500 168 546 230 L596 860 C530 892 270 892 204 860 Z" fill="url(#fabric)" />
+  <path d="M324 228 H476 V554 C451 582 349 582 324 554 Z" fill="#f1f6ff" opacity="0.17" />
+  <path d="M325 255 H475 V540 C448 566 352 566 325 540 Z" fill="url(#dots)" />
+  <rect x="368" y="262" width="64" height="270" rx="14" fill="#173576" />
+  <circle cx="400" cy="320" r="6" fill="#f8d887" />
+  <circle cx="400" cy="364" r="6" fill="#f8d887" />
+  <circle cx="400" cy="408" r="6" fill="#f8d887" />
+</svg>

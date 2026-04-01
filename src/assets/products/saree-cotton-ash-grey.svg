@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1024" role="img" aria-label="Cotton Saree Ash Grey">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#70757d" />
+      <stop offset="100%" stop-color="#bfc4cb" />
+    </linearGradient>
+    <pattern id="cotton" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M0 11 H22" stroke="#8f959e" stroke-width="0.8" opacity="0.28" />
+    </pattern>
+  </defs>
+  <rect width="800" height="1024" fill="url(#bg)" />
+  <ellipse cx="425" cy="930" rx="208" ry="33" fill="#4d5157" opacity="0.24" />
+  <path d="M170 165 C500 204 324 760 640 864 L640 940 L170 940 C244 832 204 546 170 165 Z" fill="#dce1e6" />
+  <path d="M236 220 H576 V860 H236 Z" fill="url(#cotton)" />
+  <path d="M230 230 C478 266 358 760 584 862" stroke="#a4abb5" stroke-width="6" fill="none" opacity="0.7" />
+</svg>

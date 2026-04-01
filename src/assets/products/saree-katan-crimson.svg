@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1024" role="img" aria-label="Katan Silk Saree Crimson">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4d0016" />
+      <stop offset="100%" stop-color="#d33863" />
+    </linearGradient>
+    <linearGradient id="silk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7f0a2c" />
+      <stop offset="35%" stop-color="#e45c7e" />
+      <stop offset="100%" stop-color="#8d1134" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1024" fill="url(#bg)" />
+  <ellipse cx="430" cy="930" rx="210" ry="34" fill="#2a000d" opacity="0.25" />
+  <path d="M155 170 C470 208 300 770 642 866 L642 936 L170 936 C240 836 190 576 155 170 Z" fill="url(#silk)" />
+  <path d="M220 214 C458 250 350 760 570 860" stroke="#ffd48e" stroke-width="7" fill="none" opacity="0.78" />
+  <path d="M280 240 C462 280 380 760 530 846" stroke="#ffe2b4" stroke-width="4" fill="none" opacity="0.72" />
+</svg>

@@ -5,6 +5,7 @@ import { ShoppingBag, Heart, ArrowLeft } from "lucide-react";
 import { products } from "@/data/products";
 import { useCart } from "@/context/CartContext";
 import ProductCard from "@/components/ProductCard";
+import { formatBDT } from "@/lib/utils";
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -46,7 +47,7 @@ const ProductDetail = () => {
           >
             <p className="text-accent font-display text-xs tracking-[0.3em] uppercase mb-2">{product.category}</p>
             <h1 className="font-display text-3xl lg:text-4xl font-bold tracking-tight mb-2">{product.name}</h1>
-            <p className="text-2xl font-display font-semibold mb-6">${product.price}</p>
+            <p className="text-2xl font-display font-semibold mb-6">{formatBDT(product.price)}</p>
             <p className="text-muted-foreground font-body leading-relaxed mb-8">{product.description}</p>
 
             <div className="mb-8">

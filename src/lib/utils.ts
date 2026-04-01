@@ -6,5 +6,5 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatBDT(amount: number) {
-  return `BDT ${amount.toLocaleString("en-BD")}`;
+  return `BDT ${amount.toLocaleString("en-BD")} taka`;
 }

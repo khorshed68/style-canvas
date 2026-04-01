@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1024" role="img" aria-label="Georgette Saree Midnight Black">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090b12" />
+      <stop offset="100%" stop-color="#2d3649" />
+    </linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1f2634" />
+      <stop offset="45%" stop-color="#4b5d81" />
+      <stop offset="100%" stop-color="#1a2231" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1024" fill="url(#bg)" />
+  <ellipse cx="425" cy="930" rx="210" ry="33" fill="#030509" opacity="0.34" />
+  <path d="M166 165 C498 206 324 760 640 866 L640 940 L166 940 C242 834 206 550 166 165 Z" fill="url(#cloth)" />
+  <path d="M220 220 C486 256 358 760 592 870" stroke="#b4c7ef" stroke-width="5" fill="none" opacity="0.65" />
+  <path d="M280 248 C492 286 392 760 542 838" stroke="#d7e4ff" stroke-width="2.5" fill="none" opacity="0.68" />
+</svg>

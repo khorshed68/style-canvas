@@ -5,9 +5,9 @@ import ProductCard from "@/components/ProductCard";
 
 const priceRanges = [
   { label: "All Prices", min: 0, max: Infinity },
-  { label: "Under $50", min: 0, max: 50 },
-  { label: "$50 - $100", min: 50, max: 100 },
-  { label: "Over $100", min: 100, max: Infinity },
+  { label: "Under BDT 50 taka", min: 0, max: 50 },
+  { label: "BDT 50 - BDT 100 taka", min: 50, max: 100 },
+  { label: "Over BDT 100 taka", min: 100, max: Infinity },
 ];
 
 const Shop = () => {

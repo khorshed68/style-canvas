@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Heart, ShoppingBag } from "lucide-react";
 import type { Product } from "@/data/products";
 import { useCart } from "@/context/CartContext";
+import { formatBDT } from "@/lib/utils";
 
 const ProductCard = ({ product, index = 0 }: { product: Product; index?: number }) => {
   const { addItem, wishlist, toggleWishlist } = useCart();
@@ -49,7 +50,7 @@ const ProductCard = ({ product, index = 0 }: { product: Product; index?: number 
       </Link>
       <div className="mt-3">
         <h3 className="font-display text-sm font-medium tracking-wide">{product.name}</h3>
-        <p className="text-muted-foreground text-sm mt-0.5">${product.price}</p>
+        <p className="text-muted-foreground text-sm mt-0.5">{formatBDT(product.price)}</p>
       </div>
     </motion.div>
   );
