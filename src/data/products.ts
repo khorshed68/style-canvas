@@ -5,7 +5,7 @@ import bomberBlack from "@/assets/products/bomber-black.jpg";
 import hoodieGreen from "@/assets/products/hoodie-green.jpg";
 import joggersGrey from "@/assets/products/joggers-grey.jpg";
 import tshirtWhiteGraphic from "@/assets/products/tshirt-white-graphic.jpg";
-import panjabiRoyalBlue from "@/assets/products/panjabi-royal-blue.svg";
+import panjabiRoyalBlue from "@/assets/products/panjabi-royal-blue.jpg";
 import panjabiIvoryEmbroidered from "@/assets/products/panjabi-ivory-embroidered.svg";
 import panjabiBlackMinimal from "@/assets/products/panjabi-black-minimal.svg";
 import panjabiSageCotton from "@/assets/products/panjabi-sage-cotton.svg";
